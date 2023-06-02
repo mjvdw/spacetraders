@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.ship_mount import ShipMount
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.ship_mount import ShipMount
+from spacetraders import configuration
 
 
 class TestShipMount(unittest.TestCase):

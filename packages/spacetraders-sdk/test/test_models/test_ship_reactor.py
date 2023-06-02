@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.ship_reactor import ShipReactor
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.ship_reactor import ShipReactor
+from spacetraders import configuration
 
 
 class TestShipReactor(unittest.TestCase):

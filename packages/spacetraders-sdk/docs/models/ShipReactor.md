@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.ship_reactor.ShipReactor
+# spacetraders.models.ship_reactor.ShipReactor
 
 The reactor of the ship. The reactor is responsible for powering the ship's systems and weapons.
 

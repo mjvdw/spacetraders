@@ -1,5 +1,5 @@
 <a id="__pageTop"></a>
-# spacetraders-sdk.api.tags.contracts_api.ContractsApi
+# spacetraders.api.tags.contracts_api.ContractsApi
 
 All URIs are relative to *https://api.spacetraders.io/v2*
 
@@ -23,14 +23,14 @@ Accept a contract.
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import contracts_api
-from spacetraders-sdk.models.contract import Contract
-from spacetraders-sdk.models.agent import Agent
+import spacetraders
+from spacetraders.api.tags import contracts_api
+from spacetraders.models.agent import Agent
+from spacetraders.models.contract import Contract
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -40,11 +40,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = contracts_api.ContractsApi(api_client)
 
@@ -58,7 +58,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling ContractsApi->accept_contract: %s\n" % e)
 ```
 ### Parameters
@@ -144,14 +144,14 @@ Deliver cargo on a given contract.
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import contracts_api
-from spacetraders-sdk.models.contract import Contract
-from spacetraders-sdk.models.ship_cargo import ShipCargo
+import spacetraders
+from spacetraders.api.tags import contracts_api
+from spacetraders.models.ship_cargo import ShipCargo
+from spacetraders.models.contract import Contract
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -161,11 +161,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = contracts_api.ContractsApi(api_client)
 
@@ -179,7 +179,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling ContractsApi->deliver_contract: %s\n" % e)
 
     # example passing only optional values
@@ -198,7 +198,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling ContractsApi->deliver_contract: %s\n" % e)
 ```
 ### Parameters
@@ -303,14 +303,14 @@ Fulfill a contract
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import contracts_api
-from spacetraders-sdk.models.contract import Contract
-from spacetraders-sdk.models.agent import Agent
+import spacetraders
+from spacetraders.api.tags import contracts_api
+from spacetraders.models.agent import Agent
+from spacetraders.models.contract import Contract
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -320,11 +320,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = contracts_api.ContractsApi(api_client)
 
@@ -338,7 +338,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling ContractsApi->fulfill_contract: %s\n" % e)
 ```
 ### Parameters
@@ -424,13 +424,13 @@ Get the details of a contract by ID.
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import contracts_api
-from spacetraders-sdk.models.contract import Contract
+import spacetraders
+from spacetraders.api.tags import contracts_api
+from spacetraders.models.contract import Contract
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -440,11 +440,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = contracts_api.ContractsApi(api_client)
 
@@ -458,7 +458,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling ContractsApi->get_contract: %s\n" % e)
 ```
 ### Parameters
@@ -530,14 +530,14 @@ List all of your contracts.
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import contracts_api
-from spacetraders-sdk.models.meta import Meta
-from spacetraders-sdk.models.contract import Contract
+import spacetraders
+from spacetraders.api.tags import contracts_api
+from spacetraders.models.meta import Meta
+from spacetraders.models.contract import Contract
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -547,11 +547,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = contracts_api.ContractsApi(api_client)
 
@@ -566,7 +566,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling ContractsApi->get_contracts: %s\n" % e)
 ```
 ### Parameters

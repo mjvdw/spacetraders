@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.scanned_ship.ScannedShip
+# spacetraders.models.scanned_ship.ScannedShip
 
 The ship that was scanned. Details include information about the ship that could be detected by the scanner.
 

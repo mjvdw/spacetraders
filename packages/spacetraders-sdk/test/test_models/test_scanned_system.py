@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.scanned_system import ScannedSystem
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.scanned_system import ScannedSystem
+from spacetraders import configuration
 
 
 class TestScannedSystem(unittest.TestCase):

@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.ship_crew import ShipCrew
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.ship_crew import ShipCrew
+from spacetraders import configuration
 
 
 class TestShipCrew(unittest.TestCase):

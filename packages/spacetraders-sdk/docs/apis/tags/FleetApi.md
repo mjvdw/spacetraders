@@ -1,5 +1,5 @@
 <a id="__pageTop"></a>
-# spacetraders-sdk.api.tags.fleet_api.FleetApi
+# spacetraders.api.tags.fleet_api.FleetApi
 
 All URIs are relative to *https://api.spacetraders.io/v2*
 
@@ -43,14 +43,14 @@ Command a ship to chart the current waypoint.  Waypoints in the universe are unc
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.waypoint import Waypoint
-from spacetraders-sdk.models.chart import Chart
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.chart import Chart
+from spacetraders.models.waypoint import Waypoint
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -60,11 +60,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -78,7 +78,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->create_chart: %s\n" % e)
 ```
 ### Parameters
@@ -164,14 +164,14 @@ Activate your ship's sensor arrays to scan for ship information.
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.scanned_ship import ScannedShip
-from spacetraders-sdk.models.cooldown import Cooldown
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.cooldown import Cooldown
+from spacetraders.models.scanned_ship import ScannedShip
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -181,11 +181,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -199,7 +199,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->create_ship_ship_scan: %s\n" % e)
 ```
 ### Parameters
@@ -297,14 +297,14 @@ Activate your ship's sensor arrays to scan for system information.
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.cooldown import Cooldown
-from spacetraders-sdk.models.scanned_system import ScannedSystem
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.cooldown import Cooldown
+from spacetraders.models.scanned_system import ScannedSystem
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -314,11 +314,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -332,7 +332,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->create_ship_system_scan: %s\n" % e)
 ```
 ### Parameters
@@ -430,14 +430,14 @@ Activate your ship's sensor arrays to scan for waypoint information.
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.cooldown import Cooldown
-from spacetraders-sdk.models.scanned_waypoint import ScannedWaypoint
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.cooldown import Cooldown
+from spacetraders.models.scanned_waypoint import ScannedWaypoint
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -447,11 +447,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -465,7 +465,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->create_ship_waypoint_scan: %s\n" % e)
 ```
 ### Parameters
@@ -563,14 +563,14 @@ If you want to target specific yields for an extraction, you can survey a waypoi
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.cooldown import Cooldown
-from spacetraders-sdk.models.survey import Survey
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.cooldown import Cooldown
+from spacetraders.models.survey import Survey
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -580,11 +580,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -598,7 +598,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->create_survey: %s\n" % e)
 ```
 ### Parameters
@@ -696,13 +696,13 @@ Attempt to dock your ship at it's current location. Docking will only succeed if
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.ship_nav import ShipNav
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.ship_nav import ShipNav
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -712,11 +712,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -730,7 +730,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->dock_ship: %s\n" % e)
 ```
 ### Parameters
@@ -815,16 +815,16 @@ Extract resources from the waypoint into your ship. Send an optional survey as t
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.extraction import Extraction
-from spacetraders-sdk.models.cooldown import Cooldown
-from spacetraders-sdk.models.ship_cargo import ShipCargo
-from spacetraders-sdk.models.survey import Survey
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.cooldown import Cooldown
+from spacetraders.models.ship_cargo import ShipCargo
+from spacetraders.models.survey import Survey
+from spacetraders.models.extraction import Extraction
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -834,11 +834,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -852,7 +852,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->extract_resources: %s\n" % e)
 
     # example passing only optional values
@@ -879,7 +879,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->extract_resources: %s\n" % e)
 ```
 ### Parameters
@@ -983,13 +983,13 @@ Retrieve the details of your ship.
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.ship import Ship
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.ship import Ship
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -999,11 +999,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -1017,7 +1017,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->get_my_ship: %s\n" % e)
 ```
 ### Parameters
@@ -1089,13 +1089,13 @@ Retrieve the cargo of your ship.
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.ship_cargo import ShipCargo
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.ship_cargo import ShipCargo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -1105,11 +1105,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -1123,7 +1123,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->get_my_ship_cargo: %s\n" % e)
 ```
 ### Parameters
@@ -1195,14 +1195,14 @@ Retrieve all of your ships.
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.meta import Meta
-from spacetraders-sdk.models.ship import Ship
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.meta import Meta
+from spacetraders.models.ship import Ship
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -1212,11 +1212,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -1231,7 +1231,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->get_my_ships: %s\n" % e)
 ```
 ### Parameters
@@ -1325,13 +1325,13 @@ Retrieve the details of your ship's reactor cooldown. Some actions such as activ
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.cooldown import Cooldown
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.cooldown import Cooldown
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -1341,11 +1341,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -1359,7 +1359,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->get_ship_cooldown: %s\n" % e)
 ```
 ### Parameters
@@ -1439,13 +1439,13 @@ Get the current nav status of a ship.
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.ship_nav import ShipNav
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.ship_nav import ShipNav
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -1455,11 +1455,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -1473,7 +1473,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->get_ship_nav: %s\n" % e)
 ```
 ### Parameters
@@ -1545,13 +1545,13 @@ Jettison cargo from your ship's cargo hold.
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.ship_cargo import ShipCargo
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.ship_cargo import ShipCargo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -1561,11 +1561,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -1579,7 +1579,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->jettison: %s\n" % e)
 
     # example passing only optional values
@@ -1597,7 +1597,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->jettison: %s\n" % e)
 ```
 ### Parameters
@@ -1700,14 +1700,14 @@ Jump your ship instantly to a target system. When used while in orbit or docked 
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.ship_nav import ShipNav
-from spacetraders-sdk.models.cooldown import Cooldown
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.cooldown import Cooldown
+from spacetraders.models.ship_nav import ShipNav
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -1717,11 +1717,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -1735,7 +1735,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->jump_ship: %s\n" % e)
 
     # example passing only optional values
@@ -1752,7 +1752,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->jump_ship: %s\n" % e)
 ```
 ### Parameters
@@ -1856,14 +1856,14 @@ Navigate to a target destination. The destination must be located within the sam
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.ship_fuel import ShipFuel
-from spacetraders-sdk.models.ship_nav import ShipNav
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.ship_nav import ShipNav
+from spacetraders.models.ship_fuel import ShipFuel
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -1873,11 +1873,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -1891,7 +1891,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->navigate_ship: %s\n" % e)
 
     # example passing only optional values
@@ -1908,7 +1908,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->navigate_ship: %s\n" % e)
 ```
 ### Parameters
@@ -2009,13 +2009,13 @@ Negotiate Contract
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.contract import Contract
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.contract import Contract
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -2025,11 +2025,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -2043,7 +2043,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->negotiate_contract: %s\n" % e)
 
     # example passing only optional values
@@ -2058,7 +2058,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->negotiate_contract: %s\n" % e)
 ```
 ### Parameters
@@ -2154,13 +2154,13 @@ Attempt to move your ship into orbit at it's current location. The request will 
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.ship_nav import ShipNav
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.ship_nav import ShipNav
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -2170,11 +2170,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -2188,7 +2188,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->orbit_ship: %s\n" % e)
 ```
 ### Parameters
@@ -2273,14 +2273,14 @@ Update the nav data of a ship, such as the flight mode.
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.ship_nav import ShipNav
-from spacetraders-sdk.models.ship_nav_flight_mode import ShipNavFlightMode
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.ship_nav_flight_mode import ShipNavFlightMode
+from spacetraders.models.ship_nav import ShipNav
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -2290,11 +2290,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -2308,7 +2308,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->patch_ship_nav: %s\n" % e)
 
     # example passing only optional values
@@ -2325,7 +2325,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->patch_ship_nav: %s\n" % e)
 ```
 ### Parameters
@@ -2414,15 +2414,15 @@ Purchase cargo.
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.market_transaction import MarketTransaction
-from spacetraders-sdk.models.ship_cargo import ShipCargo
-from spacetraders-sdk.models.agent import Agent
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.agent import Agent
+from spacetraders.models.market_transaction import MarketTransaction
+from spacetraders.models.ship_cargo import ShipCargo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -2432,11 +2432,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -2450,7 +2450,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->purchase_cargo: %s\n" % e)
 
     # example passing only optional values
@@ -2468,7 +2468,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->purchase_cargo: %s\n" % e)
 ```
 ### Parameters
@@ -2573,16 +2573,16 @@ Purchase a ship
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.ship_type import ShipType
-from spacetraders-sdk.models.shipyard_transaction import ShipyardTransaction
-from spacetraders-sdk.models.ship import Ship
-from spacetraders-sdk.models.agent import Agent
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.agent import Agent
+from spacetraders.models.ship_type import ShipType
+from spacetraders.models.ship import Ship
+from spacetraders.models.shipyard_transaction import ShipyardTransaction
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -2592,11 +2592,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -2611,7 +2611,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->purchase_ship: %s\n" % e)
 ```
 ### Parameters
@@ -2701,15 +2701,15 @@ Refuel your ship from the local market.
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.ship_fuel import ShipFuel
-from spacetraders-sdk.models.market_transaction import MarketTransaction
-from spacetraders-sdk.models.agent import Agent
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.agent import Agent
+from spacetraders.models.market_transaction import MarketTransaction
+from spacetraders.models.ship_fuel import ShipFuel
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -2719,11 +2719,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -2737,7 +2737,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->refuel_ship: %s\n" % e)
 ```
 ### Parameters
@@ -2824,15 +2824,15 @@ Sell cargo.
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.market_transaction import MarketTransaction
-from spacetraders-sdk.models.ship_cargo import ShipCargo
-from spacetraders-sdk.models.agent import Agent
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.agent import Agent
+from spacetraders.models.market_transaction import MarketTransaction
+from spacetraders.models.ship_cargo import ShipCargo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -2842,11 +2842,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -2860,7 +2860,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->sell_cargo: %s\n" % e)
 
     # example passing only optional values
@@ -2878,7 +2878,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->sell_cargo: %s\n" % e)
 ```
 ### Parameters
@@ -2983,14 +2983,14 @@ Attempt to refine the raw materials on your ship. The request will only succeed 
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.cooldown import Cooldown
-from spacetraders-sdk.models.ship_cargo import ShipCargo
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.cooldown import Cooldown
+from spacetraders.models.ship_cargo import ShipCargo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -3000,11 +3000,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -3018,7 +3018,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->ship_refine: %s\n" % e)
 
     # example passing only optional values
@@ -3035,7 +3035,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->ship_refine: %s\n" % e)
 ```
 ### Parameters
@@ -3192,13 +3192,13 @@ Transfer cargo between ships.
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.ship_cargo import ShipCargo
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.ship_cargo import ShipCargo
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -3208,11 +3208,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -3226,7 +3226,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->transfer_cargo: %s\n" % e)
 
     # example passing only optional values
@@ -3245,7 +3245,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->transfer_cargo: %s\n" % e)
 ```
 ### Parameters
@@ -3349,14 +3349,14 @@ Warp your ship to a target destination in another system. Warping will consume t
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import fleet_api
-from spacetraders-sdk.models.ship_fuel import ShipFuel
-from spacetraders-sdk.models.ship_nav import ShipNav
+import spacetraders
+from spacetraders.api.tags import fleet_api
+from spacetraders.models.ship_nav import ShipNav
+from spacetraders.models.ship_fuel import ShipFuel
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -3366,11 +3366,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = fleet_api.FleetApi(api_client)
 
@@ -3384,7 +3384,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->warp_ship: %s\n" % e)
 
     # example passing only optional values
@@ -3401,7 +3401,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FleetApi->warp_ship: %s\n" % e)
 ```
 ### Parameters

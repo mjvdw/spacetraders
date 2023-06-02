@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.jump_gate.JumpGate
+# spacetraders.models.jump_gate.JumpGate
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

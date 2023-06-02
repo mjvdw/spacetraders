@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.meta.Meta
+# spacetraders.models.meta.Meta
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

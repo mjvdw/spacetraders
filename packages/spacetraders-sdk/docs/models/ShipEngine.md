@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.ship_engine.ShipEngine
+# spacetraders.models.ship_engine.ShipEngine
 
 The engine determines how quickly a ship travels between waypoints.
 

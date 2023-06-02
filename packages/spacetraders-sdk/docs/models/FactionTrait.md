@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.faction_trait.FactionTrait
+# spacetraders.models.faction_trait.FactionTrait
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.survey_deposit.SurveyDeposit
+# spacetraders.models.survey_deposit.SurveyDeposit
 
 A surveyed deposit of a mineral or resource available for extraction.
 

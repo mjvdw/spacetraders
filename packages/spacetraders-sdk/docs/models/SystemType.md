@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.system_type.SystemType
+# spacetraders.models.system_type.SystemType
 
 The type of waypoint.
 

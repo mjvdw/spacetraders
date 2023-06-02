@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.ship_cargo_item.ShipCargoItem
+# spacetraders.models.ship_cargo_item.ShipCargoItem
 
 The type of cargo item and the number of units.
 

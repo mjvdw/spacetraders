@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.cooldown.Cooldown
+# spacetraders.models.cooldown.Cooldown
 
 A cooldown is a period of time in which a ship cannot perform certain actions.
 

@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.extraction.Extraction
+# spacetraders.models.extraction.Extraction
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

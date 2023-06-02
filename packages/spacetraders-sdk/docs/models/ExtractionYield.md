@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.extraction_yield.ExtractionYield
+# spacetraders.models.extraction_yield.ExtractionYield
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

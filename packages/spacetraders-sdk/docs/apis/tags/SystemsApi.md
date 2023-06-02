@@ -1,5 +1,5 @@
 <a id="__pageTop"></a>
-# spacetraders-sdk.api.tags.systems_api.SystemsApi
+# spacetraders.api.tags.systems_api.SystemsApi
 
 All URIs are relative to *https://api.spacetraders.io/v2*
 
@@ -24,18 +24,18 @@ Get jump gate details for a waypoint.
 ### Example
 
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import systems_api
-from spacetraders-sdk.models.jump_gate import JumpGate
+import spacetraders
+from spacetraders.api.tags import systems_api
+from spacetraders.models.jump_gate import JumpGate
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = systems_api.SystemsApi(api_client)
 
@@ -50,7 +50,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling SystemsApi->get_jump_gate: %s\n" % e)
 ```
 ### Parameters
@@ -129,18 +129,18 @@ Retrieve imports, exports and exchange data from a marketplace. Imports can be s
 ### Example
 
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import systems_api
-from spacetraders-sdk.models.market import Market
+import spacetraders
+from spacetraders.api.tags import systems_api
+from spacetraders.models.market import Market
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = systems_api.SystemsApi(api_client)
 
@@ -155,7 +155,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling SystemsApi->get_market: %s\n" % e)
 ```
 ### Parameters
@@ -234,18 +234,18 @@ Get the shipyard for a waypoint. Send a ship to the waypoint to access ships tha
 ### Example
 
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import systems_api
-from spacetraders-sdk.models.shipyard import Shipyard
+import spacetraders
+from spacetraders.api.tags import systems_api
+from spacetraders.models.shipyard import Shipyard
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = systems_api.SystemsApi(api_client)
 
@@ -260,7 +260,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling SystemsApi->get_shipyard: %s\n" % e)
 ```
 ### Parameters
@@ -339,18 +339,18 @@ Get the details of a system.
 ### Example
 
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import systems_api
-from spacetraders-sdk.models.system import System
+import spacetraders
+from spacetraders.api.tags import systems_api
+from spacetraders.models.system import System
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = systems_api.SystemsApi(api_client)
 
@@ -364,7 +364,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling SystemsApi->get_system: %s\n" % e)
 ```
 ### Parameters
@@ -436,14 +436,14 @@ Fetch all of the waypoints for a given system. System must be charted or a ship 
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import systems_api
-from spacetraders-sdk.models.waypoint import Waypoint
-from spacetraders-sdk.models.meta import Meta
+import spacetraders
+from spacetraders.api.tags import systems_api
+from spacetraders.models.meta import Meta
+from spacetraders.models.waypoint import Waypoint
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -453,11 +453,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = systems_api.SystemsApi(api_client)
 
@@ -474,7 +474,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling SystemsApi->get_system_waypoints: %s\n" % e)
 
     # example passing only optional values
@@ -492,7 +492,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling SystemsApi->get_system_waypoints: %s\n" % e)
 ```
 ### Parameters
@@ -600,19 +600,19 @@ Return a list of all systems.
 ### Example
 
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import systems_api
-from spacetraders-sdk.models.system import System
-from spacetraders-sdk.models.meta import Meta
+import spacetraders
+from spacetraders.api.tags import systems_api
+from spacetraders.models.system import System
+from spacetraders.models.meta import Meta
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = systems_api.SystemsApi(api_client)
 
@@ -627,7 +627,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling SystemsApi->get_systems: %s\n" % e)
 ```
 ### Parameters
@@ -720,18 +720,18 @@ View the details of a waypoint.
 ### Example
 
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import systems_api
-from spacetraders-sdk.models.waypoint import Waypoint
+import spacetraders
+from spacetraders.api.tags import systems_api
+from spacetraders.models.waypoint import Waypoint
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = systems_api.SystemsApi(api_client)
 
@@ -746,7 +746,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling SystemsApi->get_waypoint: %s\n" % e)
 ```
 ### Parameters

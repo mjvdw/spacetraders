@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.chart.Chart
+# spacetraders.models.chart.Chart
 
 The chart of a system or waypoint, which makes the location visible to other agents.
 

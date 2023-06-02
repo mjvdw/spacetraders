@@ -1,5 +1,5 @@
 <a id="__pageTop"></a>
-# spacetraders-sdk.api.tags.default_api.DefaultApi
+# spacetraders.api.tags.default_api.DefaultApi
 
 All URIs are relative to *https://api.spacetraders.io/v2*
 
@@ -19,17 +19,17 @@ Return the status of the game server.
 ### Example
 
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import default_api
+import spacetraders
+from spacetraders.api.tags import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -38,7 +38,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
         # Get Status
         api_response = api_instance.get_status()
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling DefaultApi->get_status: %s\n" % e)
 ```
 ### Parameters
@@ -246,21 +246,21 @@ Creates a new agent and ties it to a temporary Account.  The agent symbol is a 3
 ### Example
 
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import default_api
-from spacetraders-sdk.models.faction import Faction
-from spacetraders-sdk.models.contract import Contract
-from spacetraders-sdk.models.ship import Ship
-from spacetraders-sdk.models.agent import Agent
+import spacetraders
+from spacetraders.api.tags import default_api
+from spacetraders.models.agent import Agent
+from spacetraders.models.faction import Faction
+from spacetraders.models.contract import Contract
+from spacetraders.models.ship import Ship
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -276,7 +276,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             body=body,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling DefaultApi->register: %s\n" % e)
 ```
 ### Parameters

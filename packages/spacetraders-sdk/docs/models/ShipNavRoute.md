@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.ship_nav_route.ShipNavRoute
+# spacetraders.models.ship_nav_route.ShipNavRoute
 
 The routing information for the ship's most recent transit or current location.
 

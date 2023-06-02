@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.connected_system.ConnectedSystem
+# spacetraders.models.connected_system.ConnectedSystem
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

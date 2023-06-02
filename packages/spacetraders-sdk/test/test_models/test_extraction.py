@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.extraction import Extraction
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.extraction import Extraction
+from spacetraders import configuration
 
 
 class TestExtraction(unittest.TestCase):

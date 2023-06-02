@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.market_trade_good import MarketTradeGood
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.market_trade_good import MarketTradeGood
+from spacetraders import configuration
 
 
 class TestMarketTradeGood(unittest.TestCase):

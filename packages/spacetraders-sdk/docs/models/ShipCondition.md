@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.ship_condition.ShipCondition
+# spacetraders.models.ship_condition.ShipCondition
 
 Condition is a range of 0 to 100 where 0 is completely worn out and 100 is brand new.
 

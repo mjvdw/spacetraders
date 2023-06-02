@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.ship_nav_status.ShipNavStatus
+# spacetraders.models.ship_nav_status.ShipNavStatus
 
 The current status of the ship
 

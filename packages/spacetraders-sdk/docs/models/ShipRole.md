@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.ship_role.ShipRole
+# spacetraders.models.ship_role.ShipRole
 
 The registered role of the ship
 

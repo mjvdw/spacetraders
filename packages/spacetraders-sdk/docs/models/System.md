@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.system.System
+# spacetraders.models.system.System
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

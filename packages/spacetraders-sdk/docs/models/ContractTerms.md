@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.contract_terms.ContractTerms
+# spacetraders.models.contract_terms.ContractTerms
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

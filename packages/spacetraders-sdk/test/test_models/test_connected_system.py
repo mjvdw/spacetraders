@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.connected_system import ConnectedSystem
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.connected_system import ConnectedSystem
+from spacetraders import configuration
 
 
 class TestConnectedSystem(unittest.TestCase):

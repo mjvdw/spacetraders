@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.faction import Faction
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.faction import Faction
+from spacetraders import configuration
 
 
 class TestFaction(unittest.TestCase):

@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.agent import Agent
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.agent import Agent
+from spacetraders import configuration
 
 
 class TestAgent(unittest.TestCase):

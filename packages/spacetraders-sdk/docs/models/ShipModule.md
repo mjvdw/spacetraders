@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.ship_module.ShipModule
+# spacetraders.models.ship_module.ShipModule
 
 A module can be installed in a ship and provides a set of capabilities such as storage space or quarters for crew. Module installations are permanent.
 

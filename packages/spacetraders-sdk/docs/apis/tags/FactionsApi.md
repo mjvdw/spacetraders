@@ -1,5 +1,5 @@
 <a id="__pageTop"></a>
-# spacetraders-sdk.api.tags.factions_api.FactionsApi
+# spacetraders.api.tags.factions_api.FactionsApi
 
 All URIs are relative to *https://api.spacetraders.io/v2*
 
@@ -20,13 +20,13 @@ View the details of a faction.
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import factions_api
-from spacetraders-sdk.models.faction import Faction
+import spacetraders
+from spacetraders.api.tags import factions_api
+from spacetraders.models.faction import Faction
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -36,11 +36,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = factions_api.FactionsApi(api_client)
 
@@ -54,7 +54,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             path_params=path_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FactionsApi->get_faction: %s\n" % e)
 ```
 ### Parameters
@@ -126,14 +126,14 @@ List all discovered factions in the game.
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import factions_api
-from spacetraders-sdk.models.faction import Faction
-from spacetraders-sdk.models.meta import Meta
+import spacetraders
+from spacetraders.api.tags import factions_api
+from spacetraders.models.faction import Faction
+from spacetraders.models.meta import Meta
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -143,11 +143,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = factions_api.FactionsApi(api_client)
 
@@ -162,7 +162,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
             query_params=query_params,
         )
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling FactionsApi->get_factions: %s\n" % e)
 ```
 ### Parameters

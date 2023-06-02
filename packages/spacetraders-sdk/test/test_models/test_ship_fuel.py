@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.ship_fuel import ShipFuel
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.ship_fuel import ShipFuel
+from spacetraders import configuration
 
 
 class TestShipFuel(unittest.TestCase):

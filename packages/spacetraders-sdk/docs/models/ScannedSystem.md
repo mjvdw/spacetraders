@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.scanned_system.ScannedSystem
+# spacetraders.models.scanned_system.ScannedSystem
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

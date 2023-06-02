@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.trade_good import TradeGood
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.trade_good import TradeGood
+from spacetraders import configuration
 
 
 class TestTradeGood(unittest.TestCase):

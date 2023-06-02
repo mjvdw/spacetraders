@@ -1,5 +1,5 @@
 <a id="__pageTop"></a>
-# spacetraders-sdk.api.tags.agents_api.AgentsApi
+# spacetraders.api.tags.agents_api.AgentsApi
 
 All URIs are relative to *https://api.spacetraders.io/v2*
 
@@ -19,13 +19,13 @@ Fetch your agent's details.
 
 * Bearer Authentication (AgentToken):
 ```python
-import spacetraders-sdk
-from spacetraders-sdk.api.tags import agents_api
-from spacetraders-sdk.models.agent import Agent
+import spacetraders
+from spacetraders.api.tags import agents_api
+from spacetraders.models.agent import Agent
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -35,11 +35,11 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = agents_api.AgentsApi(api_client)
 
@@ -48,7 +48,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
         # My Agent Details
         api_response = api_instance.get_my_agent()
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling AgentsApi->get_my_agent: %s\n" % e)
 ```
 ### Parameters

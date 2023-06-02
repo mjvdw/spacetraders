@@ -11,9 +11,9 @@ from unittest.mock import patch
 
 import urllib3
 
-import spacetraders-sdk
-from spacetraders-sdk.paths.my_ships import post  # noqa: E501
-from spacetraders-sdk import configuration, schemas, api_client
+import spacetraders
+from spacetraders.paths.my_ships import post  # noqa: E501
+from spacetraders import configuration, schemas, api_client
 
 from .. import ApiTestMixin
 

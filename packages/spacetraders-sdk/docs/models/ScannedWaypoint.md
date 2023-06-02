@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.scanned_waypoint.ScannedWaypoint
+# spacetraders.models.scanned_waypoint.ScannedWaypoint
 
 A waypoint is a location that ships can travel to such as a Planet, Moon or Space Station.
 

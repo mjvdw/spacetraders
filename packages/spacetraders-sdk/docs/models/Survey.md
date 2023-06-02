@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.survey.Survey
+# spacetraders.models.survey.Survey
 
 A resource survey of a waypoint, detailing a specific extraction location and the types of resources that can be found there.
 

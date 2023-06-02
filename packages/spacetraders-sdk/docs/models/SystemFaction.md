@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.system_faction.SystemFaction
+# spacetraders.models.system_faction.SystemFaction
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

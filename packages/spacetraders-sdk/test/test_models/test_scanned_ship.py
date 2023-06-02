@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.scanned_ship import ScannedShip
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.scanned_ship import ScannedShip
+from spacetraders import configuration
 
 
 class TestScannedShip(unittest.TestCase):

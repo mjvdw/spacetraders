@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.survey import Survey
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.survey import Survey
+from spacetraders import configuration
 
 
 class TestSurvey(unittest.TestCase):

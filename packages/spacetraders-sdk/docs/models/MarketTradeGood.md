@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.market_trade_good.MarketTradeGood
+# spacetraders.models.market_trade_good.MarketTradeGood
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.agent.Agent
+# spacetraders.models.agent.Agent
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

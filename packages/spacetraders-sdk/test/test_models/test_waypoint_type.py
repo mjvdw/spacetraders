@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.waypoint_type import WaypointType
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.waypoint_type import WaypointType
+from spacetraders import configuration
 
 
 class TestWaypointType(unittest.TestCase):

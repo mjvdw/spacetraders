@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.survey_deposit import SurveyDeposit
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.survey_deposit import SurveyDeposit
+from spacetraders import configuration
 
 
 class TestSurveyDeposit(unittest.TestCase):

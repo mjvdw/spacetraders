@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.ship_registration.ShipRegistration
+# spacetraders.models.ship_registration.ShipRegistration
 
 The public registration information of the ship
 

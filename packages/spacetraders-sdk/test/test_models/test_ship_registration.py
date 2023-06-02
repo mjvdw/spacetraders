@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.ship_registration import ShipRegistration
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.ship_registration import ShipRegistration
+from spacetraders import configuration
 
 
 class TestShipRegistration(unittest.TestCase):

@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.ship_mount.ShipMount
+# spacetraders.models.ship_mount.ShipMount
 
 A mount is installed on the exterier of a ship.
 

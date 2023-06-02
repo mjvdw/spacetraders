@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.market_transaction.MarketTransaction
+# spacetraders.models.market_transaction.MarketTransaction
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

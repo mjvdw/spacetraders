@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.jump_gate import JumpGate
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.jump_gate import JumpGate
+from spacetraders import configuration
 
 
 class TestJumpGate(unittest.TestCase):

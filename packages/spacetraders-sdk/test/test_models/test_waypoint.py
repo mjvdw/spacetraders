@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.waypoint import Waypoint
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.waypoint import Waypoint
+from spacetraders import configuration
 
 
 class TestWaypoint(unittest.TestCase):

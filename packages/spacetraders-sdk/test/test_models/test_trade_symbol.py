@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.trade_symbol import TradeSymbol
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.trade_symbol import TradeSymbol
+from spacetraders import configuration
 
 
 class TestTradeSymbol(unittest.TestCase):

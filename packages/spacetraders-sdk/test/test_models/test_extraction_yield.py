@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.extraction_yield import ExtractionYield
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.extraction_yield import ExtractionYield
+from spacetraders import configuration
 
 
 class TestExtractionYield(unittest.TestCase):

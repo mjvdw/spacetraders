@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.ship_nav_route import ShipNavRoute
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.ship_nav_route import ShipNavRoute
+from spacetraders import configuration
 
 
 class TestShipNavRoute(unittest.TestCase):

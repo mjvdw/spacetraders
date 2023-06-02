@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.ship_fuel.ShipFuel
+# spacetraders.models.ship_fuel.ShipFuel
 
 Details of the ship's fuel tanks including how much fuel was consumed during the last transit or action.
 

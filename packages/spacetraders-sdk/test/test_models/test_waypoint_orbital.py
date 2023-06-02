@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.waypoint_orbital import WaypointOrbital
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.waypoint_orbital import WaypointOrbital
+from spacetraders import configuration
 
 
 class TestWaypointOrbital(unittest.TestCase):

@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.ship_condition import ShipCondition
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.ship_condition import ShipCondition
+from spacetraders import configuration
 
 
 class TestShipCondition(unittest.TestCase):

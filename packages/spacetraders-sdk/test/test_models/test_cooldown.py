@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.cooldown import Cooldown
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.cooldown import Cooldown
+from spacetraders import configuration
 
 
 class TestCooldown(unittest.TestCase):

@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.market.Market
+# spacetraders.models.market.Market
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

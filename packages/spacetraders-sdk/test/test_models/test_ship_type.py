@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.ship_type import ShipType
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.ship_type import ShipType
+from spacetraders import configuration
 
 
 class TestShipType(unittest.TestCase):

@@ -11,9 +11,9 @@ from unittest.mock import patch
 
 import urllib3
 
-import spacetraders-sdk
-from spacetraders-sdk.paths.systems_system_symbol_waypoints_waypoint_symbol_market import get  # noqa: E501
-from spacetraders-sdk import configuration, schemas, api_client
+import spacetraders
+from spacetraders.paths.systems_system_symbol_waypoints_waypoint_symbol_market import get  # noqa: E501
+from spacetraders import configuration, schemas, api_client
 
 from .. import ApiTestMixin
 

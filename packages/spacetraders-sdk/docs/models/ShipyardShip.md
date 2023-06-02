@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.shipyard_ship.ShipyardShip
+# spacetraders.models.shipyard_ship.ShipyardShip
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.waypoint_trait.WaypointTrait
+# spacetraders.models.waypoint_trait.WaypointTrait
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

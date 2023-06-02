@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.ship_frame import ShipFrame
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.ship_frame import ShipFrame
+from spacetraders import configuration
 
 
 class TestShipFrame(unittest.TestCase):

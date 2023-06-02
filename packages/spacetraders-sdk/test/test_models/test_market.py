@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.market import Market
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.market import Market
+from spacetraders import configuration
 
 
 class TestMarket(unittest.TestCase):

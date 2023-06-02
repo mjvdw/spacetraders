@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.contract_payment.ContractPayment
+# spacetraders.models.contract_payment.ContractPayment
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

@@ -1,4 +1,4 @@
-# spacetraders-sdk
+# spacetraders
 SpaceTraders is an open-universe game and learning platform that offers a set of HTTP endpoints to control a fleet of ships and explore a multiplayer universe.
 
 The API is documented using [OpenAPI](https://github.com/SpaceTradersAPI/api-docs). You can send your first request right here in your browser to check the status of the game server.
@@ -130,7 +130,7 @@ pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
 
 Then import the package:
 ```python
-import spacetraders-sdk
+import spacetraders
 ```
 
 ### Setuptools
@@ -144,7 +144,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import spacetraders-sdk
+import spacetraders
 ```
 
 ## Getting Started
@@ -154,13 +154,13 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 
 import time
-import spacetraders-sdk
+import spacetraders
 from pprint import pprint
-from spacetraders-sdk.api.tags import agents_api
-from spacetraders-sdk.models.agent import Agent
+from spacetraders.api.tags import agents_api
+from spacetraders.models.agent import Agent
 # Defining the host is optional and defaults to https://api.spacetraders.io/v2
 # See configuration.py for a list of all supported configuration parameters.
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     host = "https://api.spacetraders.io/v2"
 )
 
@@ -170,12 +170,12 @@ configuration = spacetraders-sdk.Configuration(
 # satisfies your auth use case.
 
 # Configure Bearer authorization: AgentToken
-configuration = spacetraders-sdk.Configuration(
+configuration = spacetraders.Configuration(
     access_token = 'YOUR_BEARER_TOKEN'
 )
 
 # Enter a context with an instance of the API client
-with spacetraders-sdk.ApiClient(configuration) as api_client:
+with spacetraders.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = agents_api.AgentsApi(api_client)
     
@@ -183,7 +183,7 @@ with spacetraders-sdk.ApiClient(configuration) as api_client:
         # My Agent Details
         api_response = api_instance.get_my_agent()
         pprint(api_response)
-    except spacetraders-sdk.ApiException as e:
+    except spacetraders.ApiException as e:
         print("Exception when calling AgentsApi->get_my_agent: %s\n" % e)
 ```
 
@@ -314,20 +314,20 @@ joel@spacetraders.io
 joel@spacetraders.io
 
 ## Notes for Large OpenAPI documents
-If the OpenAPI document is large, imports in spacetraders-sdk.apis and spacetraders-sdk.models may fail with a
+If the OpenAPI document is large, imports in spacetraders.apis and spacetraders.models may fail with a
 RecursionError indicating the maximum recursion limit has been exceeded. In that case, there are a couple of solutions:
 
 Solution 1:
 Use specific imports for apis and models like:
-- `from spacetraders-sdk.api.default_api import DefaultApi`
-- `from spacetraders-sdk.models.pet import Pet`
+- `from spacetraders.api.default_api import DefaultApi`
+- `from spacetraders.models.pet import Pet`
 
 Solution 1:
 Before importing the package, adjust the maximum recursion limit as shown below:
 ```
 import sys
 sys.setrecursionlimit(1500)
-import spacetraders-sdk
-from spacetraders-sdk.apis import *
-from spacetraders-sdk.models import *
+import spacetraders
+from spacetraders.apis import *
+from spacetraders.models import *
 ```

@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.ship.Ship
+# spacetraders.models.ship.Ship
 
 A ship
 

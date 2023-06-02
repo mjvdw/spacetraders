@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.shipyard_transaction import ShipyardTransaction
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.shipyard_transaction import ShipyardTransaction
+from spacetraders import configuration
 
 
 class TestShipyardTransaction(unittest.TestCase):

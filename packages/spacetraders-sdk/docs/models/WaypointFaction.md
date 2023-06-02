@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.waypoint_faction.WaypointFaction
+# spacetraders.models.waypoint_faction.WaypointFaction
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

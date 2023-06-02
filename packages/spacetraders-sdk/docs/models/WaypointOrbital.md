@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.waypoint_orbital.WaypointOrbital
+# spacetraders.models.waypoint_orbital.WaypointOrbital
 
 An orbital is another waypoint that orbits a parent waypoint.
 

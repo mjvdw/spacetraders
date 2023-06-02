@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.ship_nav.ShipNav
+# spacetraders.models.ship_nav.ShipNav
 
 The navigation information of the ship.
 

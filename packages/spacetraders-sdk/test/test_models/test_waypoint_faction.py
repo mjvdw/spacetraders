@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.waypoint_faction import WaypointFaction
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.waypoint_faction import WaypointFaction
+from spacetraders import configuration
 
 
 class TestWaypointFaction(unittest.TestCase):

@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.ship_engine import ShipEngine
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.ship_engine import ShipEngine
+from spacetraders import configuration
 
 
 class TestShipEngine(unittest.TestCase):

@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.faction_trait import FactionTrait
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.faction_trait import FactionTrait
+from spacetraders import configuration
 
 
 class TestFactionTrait(unittest.TestCase):

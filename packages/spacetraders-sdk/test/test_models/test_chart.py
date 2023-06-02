@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.chart import Chart
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.chart import Chart
+from spacetraders import configuration
 
 
 class TestChart(unittest.TestCase):

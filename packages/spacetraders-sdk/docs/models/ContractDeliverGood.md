@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.contract_deliver_good.ContractDeliverGood
+# spacetraders.models.contract_deliver_good.ContractDeliverGood
 
 The details of a delivery contract. Includes the type of good, units needed, and the destination.
 

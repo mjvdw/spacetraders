@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.contract_deliver_good import ContractDeliverGood
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.contract_deliver_good import ContractDeliverGood
+from spacetraders import configuration
 
 
 class TestContractDeliverGood(unittest.TestCase):

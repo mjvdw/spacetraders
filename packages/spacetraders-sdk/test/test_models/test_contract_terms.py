@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.contract_terms import ContractTerms
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.contract_terms import ContractTerms
+from spacetraders import configuration
 
 
 class TestContractTerms(unittest.TestCase):

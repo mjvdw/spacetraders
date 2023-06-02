@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.ship_module import ShipModule
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.ship_module import ShipModule
+from spacetraders import configuration
 
 
 class TestShipModule(unittest.TestCase):

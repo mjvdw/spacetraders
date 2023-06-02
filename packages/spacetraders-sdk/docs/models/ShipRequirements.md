@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.ship_requirements.ShipRequirements
+# spacetraders.models.ship_requirements.ShipRequirements
 
 The requirements for installation on a ship
 

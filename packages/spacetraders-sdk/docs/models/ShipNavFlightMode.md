@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.ship_nav_flight_mode.ShipNavFlightMode
+# spacetraders.models.ship_nav_flight_mode.ShipNavFlightMode
 
 The ship's set speed when traveling between waypoints or systems.
 

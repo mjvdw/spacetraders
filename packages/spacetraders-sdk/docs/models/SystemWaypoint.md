@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.system_waypoint.SystemWaypoint
+# spacetraders.models.system_waypoint.SystemWaypoint
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

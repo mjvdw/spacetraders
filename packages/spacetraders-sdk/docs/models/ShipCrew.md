@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.ship_crew.ShipCrew
+# spacetraders.models.ship_crew.ShipCrew
 
 The ship's crew service and maintain the ship's systems and equipment.
 

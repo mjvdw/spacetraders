@@ -12,9 +12,9 @@
 
 import unittest
 
-import spacetraders-sdk
-from spacetraders-sdk.models.ship_cargo_item import ShipCargoItem
-from spacetraders-sdk import configuration
+import spacetraders
+from spacetraders.models.ship_cargo_item import ShipCargoItem
+from spacetraders import configuration
 
 
 class TestShipCargoItem(unittest.TestCase):

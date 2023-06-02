@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.trade_symbol.TradeSymbol
+# spacetraders.models.trade_symbol.TradeSymbol
 
 ## Model Type Info
 Input Type | Accessed Type | Description | Notes

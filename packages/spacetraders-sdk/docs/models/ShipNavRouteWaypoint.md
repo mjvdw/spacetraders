@@ -1,4 +1,4 @@
-# spacetraders-sdk.models.ship_nav_route_waypoint.ShipNavRouteWaypoint
+# spacetraders.models.ship_nav_route_waypoint.ShipNavRouteWaypoint
 
 The destination or departure of a ships nav route.
 
