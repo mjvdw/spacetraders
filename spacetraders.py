@@ -15,7 +15,18 @@ class SpacetradersAPI(object):
         self.callsign = os.getenv("CALLSIGN")
         self.email = os.getenv("EMAIL")
 
-    def _send_request(self, method: str, endpoint: str = "", body: dict = {}):
+    def _send_request(self, method: str, endpoint: str = "", body: dict = {}) -> dict:
+        """Send a request to the Spacetraders.io API.
+
+        Args:
+            method (str): "GET", "POST", etc
+            endpoint (str, optional): The API endpoint after the base URL. Defaults to "".
+            body (dict, optional): Any body parameters that are part of the request. Defaults to {}.
+
+        Returns:
+            dict: The relevant object returned by the API.
+        """
+
         url = self.API_URL + endpoint
         headers = {
             "Accept": "application/json",
@@ -26,6 +37,8 @@ class SpacetradersAPI(object):
             method=method, url=url, headers=headers, params=body
         )
 
+        # Handle error after server reset where token has been revoked.
+        # Happens weekly.
         if "error" in response.json():
             try:
                 headers.pop("Authorization")
@@ -50,19 +63,23 @@ class SpacetradersAPI(object):
         else:
             return response.json()
 
-    def register_agent(
-        self,
-        faction: str = "COSMIC",
-        email: str = "",
-    ) -> dict:
-        return self._send_request(
-            method="post",
-            endpoint="/register",
-            body={"symbol": self.callsign, "faction": faction, "email": email},
-        )  # type: ignore
+    ###################
+    # BASIC FUNCTIONS #
+    ###################
 
-    def get_my_agent_details(self):
+    def get_my_agent_details(self) -> dict:
+        """Get your agent's details.
+        See: https://spacetraders.stoplight.io/docs/spacetraders/eb030b06e0192-my-agent-details
+
+        Returns:
+            dict: Agents details.
+        """
         return self._send_request(method="get", endpoint="/my/agent")
 
-    def get_status(self):
+    def get_status(self) -> dict:
+        """Return the status of the game server.
+
+        Returns:
+            dict: The status of the game server.
+        """
         return self._send_request(method="get")
