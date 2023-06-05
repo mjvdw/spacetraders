@@ -6,14 +6,16 @@ from dotenv import load_dotenv
 class SpacetradersAPI(object):
     API_URL = "https://api.spacetraders.io/v2"
     ENV_API_TOKEN = "SPACETRADERS_API_TOKEN"
+    ENV_CALLSIGN = "CALLSIGN"
+    ENV_EMAIL = "EMAIL"
 
-    def __init__(self, api_key: str = "") -> None:
+    def __init__(self) -> None:
         self.session = requests.session()
 
         load_dotenv()
-        self.api_key = api_key
-        self.callsign = os.getenv("CALLSIGN")
-        self.email = os.getenv("EMAIL")
+        self.api_key = os.getenv(self.ENV_API_TOKEN)
+        self.callsign = os.getenv(self.ENV_CALLSIGN)
+        self.email = os.getenv(self.ENV_EMAIL)
 
     def _send_request(self, method: str, endpoint: str = "", body: dict = {}) -> dict:
         """Send a request to the Spacetraders.io API.
@@ -38,7 +40,7 @@ class SpacetradersAPI(object):
         )
 
         # Handle error after server reset where token has been revoked.
-        # Happens weekly.
+        # Server reset happens weekly.
         if "error" in response.json():
             try:
                 headers.pop("Authorization")
@@ -83,3 +85,7 @@ class SpacetradersAPI(object):
             dict: The status of the game server.
         """
         return self._send_request(method="get")
+
+    ######################
+    # CONTRACT FUNCTIONS #
+    ######################
