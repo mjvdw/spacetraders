@@ -6,3 +6,4 @@ if __name__ == "__main__":
     # List current contracts.
 
     contracts = st.list_contracts()
+    print(contracts)

@@ -54,8 +54,7 @@ class SpacetradersAPI(object):
                         "email": self.email,
                     },
                 )
-                token = register_response.json()
-                print(register_response.json())
+                token = register_response.json()["data"]["token"]
                 os.environ[self.ENV_API_TOKEN] = token
             except Exception as error:
                 print(
@@ -89,3 +88,6 @@ class SpacetradersAPI(object):
     ######################
     # CONTRACT FUNCTIONS #
     ######################
+
+    def list_contracts(self) -> dict:
+        return self._send_request(method="get", endpoint="/my/contracts")
