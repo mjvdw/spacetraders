@@ -4,13 +4,6 @@ if [ -d ".venv" ]; then
     echo "Activating environment."
 else
     echo "The environment does not exist. Creating environment."
-    python3 -m pip install python-venv
+    sudo apt install python3.10-venv -y
     python3 -m venv .venv
 fi
-
-
-activate () {
-  source .venv/bin/activate
-}
-
-activate
