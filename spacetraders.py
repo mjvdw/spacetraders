@@ -91,3 +91,8 @@ class SpacetradersAPI(object):
 
     def list_contracts(self) -> dict:
         return self._send_request(method="get", endpoint="/my/contracts")
+
+    def accept_contract(self, contract_id: str) -> dict:
+        return self._send_request(
+            method="POST", endpoint=f"/my/contracts/{contract_id}/accept"
+        )
