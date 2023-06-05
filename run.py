@@ -1,3 +1,4 @@
+from utils import pprint
 from spacetraders import SpacetradersAPI
 
 if __name__ == "__main__":
@@ -6,4 +7,4 @@ if __name__ == "__main__":
     # List current contracts.
 
     contracts = st.list_contracts()
-    print(contracts)
+    pprint(contracts)
