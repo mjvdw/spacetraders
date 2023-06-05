@@ -1,3 +1,10 @@
 {
-  "python.analysis.extraPaths": ["./packages/spacetraders-sdk"]
+  "python.analysis.extraPaths": [
+    "./packages/spacetraders-sdk"
+  ],
+  "python.analysis.typeCheckingMode": "basic",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.formatting.provider": "none"
 }
