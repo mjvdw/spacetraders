@@ -3,14 +3,13 @@ from instruction import Instruction
 
 
 class Manager(object):
-    def __init__(self, api, db):
-        self.api = api
+    def __init__(self, db):
         self.db = db
 
-    def give_instruction(self, worker: Worker, instruction: Instruction) -> bool:
+    def _write_instruction(self) -> bool:
         return True
 
-    def create_instruction(self):
+    def _read_instruction(self) -> bool:
         return True
 
     @property
@@ -19,8 +18,11 @@ class Manager(object):
 
     @property
     def next_instruction(self) -> Instruction:
-        i = Instruction("Test instruction")
-        return i
+        return self._next_instruction
+
+    @next_instruction.setter
+    def next_instruction(self, i):
+        self._next_instruction = i
 
 
 class ManagerException(Exception):

@@ -1,3 +1,3 @@
 class Instruction(object):
-    def __init__(self, desc):
-        self.desc = desc
+    def __init__(self, instruction_parameters):
+        self.params = instruction_parameters

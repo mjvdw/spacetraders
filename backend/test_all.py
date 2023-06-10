@@ -1,12 +1,24 @@
 from manager import Manager
+from worker import Worker, WorkerException
 from db import Database
-from spacetraders import SpacetradersAPI
+from instruction import Instruction
 
 
-def test_manager():
-    st = SpacetradersAPI()
+def test_run():
     db = Database()
-    manager = Manager(st, db)
-    manager = Manager(api=st, db=db)
+    manager = Manager(db=db)
 
-    assert manager.has_instruction == True
+    TEST = {
+        "name": "My agent details",
+        "api_command": "get_my_agent_details",
+        "params": None,
+    }
+
+    manager.next_instruction = Instruction(TEST)
+
+    if manager.has_instruction:
+        worker = Worker(manager.next_instruction)
+        try:
+            worker.go()
+        except WorkerException as e:
+            print(e)
