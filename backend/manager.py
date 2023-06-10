@@ -10,6 +10,9 @@ class Manager(object):
     def give_instruction(self, worker: Worker, instruction: Instruction) -> bool:
         return True
 
+    def create_instruction(self):
+        return True
+
     @property
     def has_instruction(self) -> bool:
         return True
@@ -18,3 +21,7 @@ class Manager(object):
     def next_instruction(self) -> Instruction:
         i = Instruction("Test instruction")
         return i
+
+
+class ManagerException(Exception):
+    pass
