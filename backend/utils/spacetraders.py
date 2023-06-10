@@ -41,26 +41,8 @@ class SpacetradersAPI(object):
 
         # Handle error after server reset where token has been revoked.
         # Server reset happens weekly.
-        if "error" in response.json():
-            try:
-                headers.pop("Authorization")
-                register_response = self.session.request(
-                    method="post",
-                    url=f"{self.API_URL}/register",
-                    headers=headers,
-                    json={
-                        "symbol": self.callsign,
-                        "faction": "COSMIC",
-                        "email": self.email,
-                    },
-                )
-                token = register_response.json()["data"]["token"]
-                os.environ[self.ENV_API_TOKEN] = token
-            except Exception as error:
-                print(
-                    "Unable to register for an API token. Cannot send any other requests. Error: ",
-                    error,
-                )
+        if not str(response.status_code).startswith("2"):
+            raise SpacetradersAPIException(response)
         else:
             return response.json()
 
@@ -95,4 +77,27 @@ class SpacetradersAPI(object):
     def accept_contract(self, contract_id: str) -> dict:
         return self._send_request(
             method="POST", endpoint=f"/my/contracts/{contract_id}/accept"
+        )
+
+
+class SpacetradersAPIException(Exception):
+    """Display and handle spacetraders API specific errors."""
+
+    def __init__(self, response):
+        self.code = 0
+        try:
+            json_res = response.json()
+        except ValueError:
+            self.message = f"Invalid error message: {response.text}"
+        else:
+            self.code = json_res["error"]["code"]
+            self.message = json_res["error"]["message"]
+
+        self.status_code = response.status_code
+        self.response = response
+        self.request = getattr(response, "request", None)
+
+    def __str__(self):
+        return (
+            f"HTTP(code={self.status_code}), API(errorcode={self.code}): {self.message}"
         )
