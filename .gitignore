@@ -2,5 +2,8 @@
 .venv/
 *.db
 .pytest_cache
-__pycache__
+*/__pycache__
 .vscode
+node_modules
+package-lock.json
+backend/packages

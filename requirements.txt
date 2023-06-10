@@ -1,12 +1,6 @@
-certifi==2023.5.7
-charset-normalizer==3.1.0
-exceptiongroup==1.1.1
-idna==3.4
-iniconfig==2.0.0
-packaging==23.1
-pluggy==1.0.0
-pytest==7.3.1
-python-dotenv==1.0.0
-requests==2.31.0
-tomli==2.0.1
-urllib3==2.0.2
+certifi >= 14.05.14
+future; python_version<="2.7"
+six >= 1.10
+python_dateutil >= 2.5.3
+setuptools >= 21.0.0
+urllib3 >= 1.15.1
