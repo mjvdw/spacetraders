@@ -1,10 +1,13 @@
-from worker import Worker
 from instruction import Instruction
+from pprint import pprint
 
 
 class Manager(object):
     def __init__(self, db):
         self.db = db
+
+    def supervise(self, worker_response):
+        pprint(worker_response)
 
     def _write_instruction(self) -> bool:
         return True

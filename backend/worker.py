@@ -1,5 +1,4 @@
 from spacetraders import SpaceTraders
-from pprint import pprint
 
 
 class Worker(object):
@@ -7,18 +6,15 @@ class Worker(object):
         self.instruction = instruction
         self.api = SpaceTraders()
 
-    def go(self) -> bool:
+    def go(self):
         print("Carrying out instruction")
         try:
             st_class = getattr(self.api, self.instruction.params["class"])
             func = getattr(st_class, self.instruction.params["method"])
             res = func()
-            print(res)
+            return res
         except Exception as e:
             print(e)
-            return False
-        else:
-            return True
 
 
 class WorkerException(Exception):
