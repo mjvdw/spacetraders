@@ -3,21 +3,23 @@ from manager import Manager
 from worker import Worker, WorkerException
 from instruction import Instruction
 from utils import SpaceTraderClass
+import openapi_client
 
 # Enter a context with an instance of the API client
 db = Database()
 manager = Manager(db=db)
 
-TEST = {
-    "http_request": "POST",
-    "name": "My agent details",
-    "class": SpaceTraderClass.FLEET.value,
-    "method": "purchase_ship",
-    "args": None,
-    "payload": {"ship_type": "SHIP_MINING_DRONE", "waypoint_symbol": "X1-KS52-23717D"},
-}
+manager.next_instruction = Instruction(
+    name="My agent details",
+    st_class=SpaceTraderClass.DEFAULT.value,
+    st_method="register",
+    args=None,
+    payload={
+        "object_type": "InlineObject",
+        "body": {"faction": "COSMIC", "symbol": "BORING_TEST"},
+    },
+)
 
-manager.next_instruction = Instruction(TEST)
 
 if manager.has_instruction:
     worker = Worker(manager.next_instruction)
