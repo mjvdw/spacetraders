@@ -9,4 +9,4 @@ fi
 
 source .venv/bin/activate
 pip install -r requirements.txt
-openapi-generator generate -i SpaceTraders.json -g python --skip-validate-spec -o backend/packages/spacetraders-sdk
+openapi-generator generate -i SpaceTraders.json -g python --skip-validate-spec -o packages/spacetraders-sdk
