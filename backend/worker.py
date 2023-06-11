@@ -11,7 +11,14 @@ class Worker(object):
         try:
             st_class = getattr(self.api, self.instruction.params["class"])
             func = getattr(st_class, self.instruction.params["method"])
-            res = func()
+
+            args = self.instruction.params["args"]
+
+            inline_object = {
+                self.instruction.inline_object_name: self.instruction.payload
+            }
+
+            res = func(**args, **inline_object) if args else func(**inline_object)
             return res
         except Exception as e:
             print(e)

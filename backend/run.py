@@ -9,10 +9,12 @@ db = Database()
 manager = Manager(db=db)
 
 TEST = {
+    "http_request": "POST",
     "name": "My agent details",
     "class": SpaceTraderClass.FLEET.value,
-    "method": "get_my_ships",
-    "params": None,
+    "method": "purchase_ship",
+    "args": None,
+    "payload": {"ship_type": "SHIP_MINING_DRONE", "waypoint_symbol": "X1-KS52-23717D"},
 }
 
 manager.next_instruction = Instruction(TEST)
