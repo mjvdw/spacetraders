@@ -3,7 +3,6 @@ from manager import Manager
 from worker import Worker, WorkerException
 from instruction import Instruction
 from utils import SpaceTraderClass
-import openapi_client
 
 # Enter a context with an instance of the API client
 db = Database()
@@ -13,7 +12,7 @@ manager.next_instruction = Instruction(
     name="My agent details",
     st_class=SpaceTraderClass.DEFAULT.value,
     st_method="register",
-    args=None,
+    args={},
     payload={
         "object_type": "InlineObject",
         "body": {"faction": "COSMIC", "symbol": "BORING_TEST"},

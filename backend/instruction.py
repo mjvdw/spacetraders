@@ -9,7 +9,7 @@ class Instruction(object):
         st_class: str,
         st_method: str,
         args: dict = {},
-        payload: Dict[str, dict] = {"object_type": "", "body": {}},
+        payload: dict = {"object_type": "", "body": {}},
     ):
         self.name = name
         self.st_class = st_class
