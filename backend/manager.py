@@ -1,9 +1,11 @@
+from db import Database
 from instruction import Instruction
+
 from pprint import pprint
 
 
 class Manager(object):
-    def __init__(self, db):
+    def __init__(self, db: Database = Database()):
         self.db = db
 
     def supervise(self, worker_response):
@@ -24,8 +26,11 @@ class Manager(object):
         return self._next_instruction
 
     @next_instruction.setter
-    def next_instruction(self, i):
-        self._next_instruction = i
+    def next_instruction(self, instruction):
+        self._next_instruction = instruction
+
+    def add_instruction(self, instruction: Instruction) -> None:
+        self.db.add_record_to_table("instructions", instruction)
 
 
 class ManagerException(Exception):
